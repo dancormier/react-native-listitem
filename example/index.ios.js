@@ -26,11 +26,26 @@ var listitemExample = React.createClass({
 , componentWillMount: function() {
     this.updateDataSource([
       {
-        text: "hello",
+        text: "Simple listitem",
         onPress: function() {console.log('pressed')},
       }, {
-        children: <Text style={[{color: 'blue'}]}>Custom component</Text>,
-        paddingBottom: 30,
+        text: "Listitem with onPress",
+        onPress: function() {alert('listitem onPress fired')},
+      }, {
+        text: "With swipeout buttons",
+        swipeoutRight: [
+          {
+            text: "Mark as Read",
+            onPress: function() {alert('Swipeout button onPress fired')},
+            type: "primary",
+          }
+        ],
+      }, {
+        children: <View>
+                    <Text style={[{color: '#999', fontSize: 18, fontWeight: 600, paddingBottom: 4}]}>Custom component</Text>
+                    <Text style={[{color: '#666', fontSize: 12, fontWeight: 200}]}>You can pass any component via the 'children' prop.</Text>
+                  </View>,
+        paddingTop: 10,
       }
     ])
   }
@@ -47,7 +62,11 @@ var listitemExample = React.createClass({
               paddingTop={item.paddingTop}
               paddingRight={item.paddingRight}
               paddingBottom={item.paddingBottom}
-              paddingLeft={item.paddingLeft}/>
+              paddingLeft={item.paddingLeft}
+              swipeoutRight={item.swipeoutRight}
+              swipeoutLeft={item.swipeoutLeft}
+              swipeoutAutoClose={item.swipeoutAutoClose}
+              swipeoutBackgroundColor={item.swipeoutBackgroundColor}/>
   }
 , render: function() {
     return (
