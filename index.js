@@ -7,6 +7,10 @@ var Listitem = React.createClass({
     return {
       backgroundColor: '#ffffff',
       onPress: function() {console.log('pressed')},
+      paddingTop: 14,
+      paddingRight: 16,
+      paddingBottom: 16,
+      paddingLeft: 16,
       text: null,
       underlayColor: "rgba(0,0,0,.015)",
     }
@@ -18,11 +22,18 @@ var Listitem = React.createClass({
     var self = this
     var p = self.props
 
-    var styleLi = [styles.li]
-    var styleLiText = [styles.liText]
-
     var styleLiContainer = [styles.liContainer]
-    styleLiContainer.push([{ backgroundColor: p.backgroundColor }])
+    styleLiContainer.push([{ backgroundColor: p.backgroundColor}])
+
+    var styleLi = [styles.li]
+    styleLi.push([{
+      paddingTop: p.paddingTop,
+      paddingRight: p.paddingRight,
+      paddingBottom: p.paddingBottom,
+      paddingLeft: p.paddingLeft,
+    }])
+
+    var styleLiText = [styles.liText]
 
     return (
       <View style={styleLiContainer}>
