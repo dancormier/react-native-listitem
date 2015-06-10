@@ -26,10 +26,11 @@ var listitemExample = React.createClass({
 
 var styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#f2f2f2',
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
 });
 
