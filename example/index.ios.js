@@ -18,7 +18,9 @@ var listitemExample = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <Listitem/>
+        <Listitem
+          text="Hello"
+          onPress={ function(){console.log('pressed')} }/>
       </View>
     );
   }
