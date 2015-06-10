@@ -27,9 +27,9 @@ var listitemExample = React.createClass({
     this.updateDataSource([
       {
         text: "hello",
-        onPress: function() {console.log('pressed')}
+        onPress: function() {console.log('pressed')},
       }, {
-        text: "hello again"
+        children: <Text style={[{color: 'blue'}]}>Custom component</Text>,
       }
     ])
   }
@@ -41,6 +41,7 @@ var listitemExample = React.createClass({
 , renderRow: function (item){
     return  <Listitem
               text={item.text}
+              children={item.children}
               onPress={item.onPress}/>
   }
 , render: function() {

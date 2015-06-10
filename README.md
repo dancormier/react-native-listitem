@@ -25,6 +25,7 @@ var Listitem = require('react-native-listitem')
 Prop            | Type   | Optional | Default   | Description
 --------------- | ------ | -------- | --------- | -----------
 backgroundColor | string | Yes      | '#ffffff' | 
+children        | string | Yes      | null      | pass custom component as child
 onPress         | func   | Yes      | null      | function executed onPress
 paddingTop      | int    | Yes      | 14        |
 paddingRight    | int    | Yes      | 16        |

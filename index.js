@@ -24,7 +24,7 @@ var Listitem = React.createClass({
     var p = self.props
 
     var styleLiContainer = [styles.liContainer]
-    styleLiContainer.push([{ backgroundColor: p.backgroundColor}])
+    styleLiContainer.push([{ backgroundColor: p.backgroundColor }])
 
     var styleLi = [styles.li]
     styleLi.push([{
@@ -42,7 +42,10 @@ var Listitem = React.createClass({
           style={styleLi}
           underlayColor={p.underlayColor}
           onPress={self._handlePress}>
-            <Text style={styleLiText}>{p.text}</Text>
+            {p.children ?
+              <View>{p.children}</View>
+            : <Text style={styleLiText}>{p.text}</Text>
+            }
         </TouchableHighlight>
       </View>
     )
