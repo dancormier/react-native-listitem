@@ -10,7 +10,7 @@ npm install --save react-native-listitem
 
 ## Usage example
 
-note: see example/index.ios.js for more detailed example
+note: see [example/index.ios.js](https://github.com/dancormier/react-native-listitem/blob/master/example/index.ios.js) for more detailed example
 
 ```
 var Listitem = require('react-native-listitem')
