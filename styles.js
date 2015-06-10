@@ -17,7 +17,7 @@ var styles = StyleSheet.create({
   liText: {
     color: '#333',
     fontSize: 16,
-    fontWeight: '400'.
+    fontWeight: '400'
   },
 })
 
