@@ -6,7 +6,7 @@ var Listitem = React.createClass({
   getDefaultProps: function() {
     return {
       backgroundColor: '#ffffff',
-      onPress: function() {console.log('pressed')},
+      onPress: null,
       paddingTop: 14,
       paddingRight: 16,
       paddingBottom: 16,
@@ -16,7 +16,8 @@ var Listitem = React.createClass({
     }
   }
 , _handlePress: function() {
-    this.props.onPress()
+    var onPress = this.props.onPress
+    if (onPress) onPress()
   }
 , render: function() {
     var self = this
