@@ -30,6 +30,7 @@ var listitemExample = React.createClass({
         onPress: function() {console.log('pressed')},
       }, {
         children: <Text style={[{color: 'blue'}]}>Custom component</Text>,
+        paddingBottom: 30,
       }
     ])
   }
@@ -42,7 +43,11 @@ var listitemExample = React.createClass({
     return  <Listitem
               text={item.text}
               children={item.children}
-              onPress={item.onPress}/>
+              onPress={item.onPress}
+              paddingTop={item.paddingTop}
+              paddingRight={item.paddingRight}
+              paddingBottom={item.paddingBottom}
+              paddingLeft={item.paddingLeft}/>
   }
 , render: function() {
     return (
