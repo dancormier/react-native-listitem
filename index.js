@@ -36,17 +36,20 @@ var Listitem = React.createClass({
 
     var styleLiText = [styles.liText]
 
+    var listitemChild = <Text style={styleLiText}>{this.props.text}</Text>
+    if (p.children) var listitemChild = <View>{p.children}</View>
+
     return (
       <View style={styleLiContainer}>
-        <TouchableHighlight
-          style={styleLi}
-          underlayColor={p.underlayColor}
-          onPress={self._handlePress}>
-            {p.children ?
-              <View>{p.children}</View>
-            : <Text style={styleLiText}>{p.text}</Text>
-            }
-        </TouchableHighlight>
+        {p.onPress ?
+          <TouchableHighlight
+            style={styleLi}
+            underlayColor={p.underlayColor}
+            onPress={self._handlePress}>
+              {listitemChild}
+          </TouchableHighlight>
+        : <View style={styleLi}>{listitemChild}</View>
+        }
       </View>
     )
   }
