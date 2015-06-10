@@ -24,15 +24,25 @@ var Listitem = require('react-native-listitem')
 
 Prop            | Type   | Optional | Default   | Description
 --------------- | ------ | -------- | --------- | -----------
-backgroundColor | string | Yes      | '#ffffff' | 
+text            | string | Yes      | null      | text displayed in listitem
 children        | string | Yes      | null      | pass custom component as child
+backgroundColor | string | Yes      | '#ffffff' | 
 onPress         | func   | Yes      | null      | function executed onPress
 paddingTop      | int    | Yes      | 14        |
 paddingRight    | int    | Yes      | 16        |
 paddingBottom   | int    | Yes      | 16        |
 paddingLeft     | int    | Yes      | 16        |
-text            | string | Yes      | null      | text displayed in listitem
 
+#### Props for swipeout
+
+Prop                    | Type   | Optional | Default   | Description
+----------------------- | ------ | -------- | --------- | -----------
+swipeoutLeft            | array  | Yes      | []        | swipeout buttons on left
+swipeoutRight           | array  | Yes      | []        | swipeout buttons on right
+swipeoutAutoClose       | bool   | Yes      | false     | auto close on button press
+swipeoutBackgroundColor | string | Yes      | '#b6bec0' | background color
+
+For swipeout button props, see [react-native-swipeout readme](https://github.com/dancormier/react-native-swipeout/blob/master/README.md)
 
 ## To Do
 
