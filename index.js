@@ -1,5 +1,8 @@
 var React = require('react-native')
 var {Text, TouchableHighlight, View} = React
+
+var Swipeout = require('react-native-swipeout')
+
 var styles = require('./styles.js')
 
 var Listitem = React.createClass({
