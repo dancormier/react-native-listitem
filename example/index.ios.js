@@ -7,6 +7,7 @@
 var React = require('react-native');
 var {
   AppRegistry,
+  ListView,
   StyleSheet,
   Text,
   View,
@@ -15,12 +16,39 @@ var {
 var Listitem = require('react-native-listitem')
 
 var listitemExample = React.createClass({
-  render: function() {
+  getInitialState: function() {
+    return {
+      dataSource: new ListView.DataSource({
+        rowHasChanged: (r1, r2) => r1 !== r2
+      })
+    }
+  }
+, componentWillMount: function() {
+    this.updateDataSource([
+      {
+        text: "hello",
+        onPress: function() {console.log('pressed')}
+      }, {
+        text: "hello again"
+      }
+    ])
+  }
+, updateDataSource: function(data){
+    this.setState({
+      dataSource: this.state.dataSource.cloneWithRows(data)
+    })
+  }
+, renderRow: function (item){
+    return  <Listitem
+              text={item.text}
+              onPress={item.onPress}/>
+  }
+, render: function() {
     return (
       <View style={styles.container}>
-        <Listitem
-          text="Hello"
-          onPress={ function(){console.log('pressed')} }/>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={this.renderRow} />
       </View>
     );
   }
@@ -32,7 +60,6 @@ var styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center',
   },
 });
 
