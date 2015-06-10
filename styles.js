@@ -3,7 +3,6 @@ var {StyleSheet} = React
 
 var styles = StyleSheet.create({
   li: {
-    backgroundColor: '#fff',
     borderBottomColor: '#eee',
     borderColor: 'transparent',
     borderWidth: 1,

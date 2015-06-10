@@ -5,6 +5,7 @@ var styles = require('./styles.js')
 var Listitem = React.createClass({
   getDefaultProps: function() {
     return {
+      backgroundColor: '#ffffff',
       onPress: function() {console.log('pressed')},
       text: null,
       underlayColor: "rgba(0,0,0,.015)",
@@ -18,8 +19,10 @@ var Listitem = React.createClass({
     var p = self.props
 
     var styleLi = [styles.li]
-    var styleLiContainer = [styles.liContainer]
     var styleLiText = [styles.liText]
+
+    var styleLiContainer = [styles.liContainer]
+    styleLiContainer.push([{ backgroundColor: p.backgroundColor }])
 
     return (
       <View style={styleLiContainer}>

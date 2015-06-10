@@ -24,6 +24,7 @@ var Listitem = require('react-native-listitem')
 
 Prop            | Type   | Optional | Default   | Description
 --------------- | ------ | -------- | --------- | -----------
+backgroundColor | string | Yes      | '#ffffff' | 
 onPress         | func   | Yes      | null      | function executed onPress
 text            | string | Yes      | null      | text displayed in listitem
 
