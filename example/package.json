@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "react-native": "^0.5.0",
-    "react-native-listitem": "^0.2.2"
+    "react-native-listitem": "^0.2.4"
   }
 }
