@@ -1,6 +1,6 @@
 {
   "name": "react-native-listitem",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "iOS-style listitem component",
   "main": "index.js",
   "scripts": {
