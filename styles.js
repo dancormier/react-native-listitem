@@ -3,17 +3,19 @@ var {StyleSheet} = React
 
 var styles = StyleSheet.create({
   li: {
-    borderBottomColor: '#eee',
-    borderColor: 'transparent',
-    borderWidth: 1,
+    borderBottomColor: '#c8c7cc',
+    borderBottomWidth: 0.5,
   },
   liContainer: {
     flex: 1,
+    paddingLeft: 15,
   },
   liText: {
     color: '#333',
-    fontSize: 16,
-    fontWeight: '400'
+    fontSize: 17,
+    fontWeight: '400',
+    marginBottom: -3.5,
+    marginTop: -3.5,
   },
 })
 

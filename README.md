@@ -1,7 +1,7 @@
 # react-native-listitem
 iOS-style listitem component for React Native
 
-![listitem preview](http://i.imgur.com/ZCJoDpb.png)
+![listitem preview](http://i.imgur.com/mV1LFqe.gif)
 
 ## Installation
 ```
@@ -30,10 +30,10 @@ text            | string | Yes      | null      | text displayed in listitem
 children        | string | Yes      | null      | pass custom component as child
 backgroundColor | string | Yes      | '#ffffff' | 
 onPress         | func   | Yes      | null      | function executed onPress
-paddingTop      | int    | Yes      | 14        |
-paddingRight    | int    | Yes      | 16        |
-paddingBottom   | int    | Yes      | 16        |
-paddingLeft     | int    | Yes      | 16        |
+paddingTop      | int    | Yes      | 15        |
+paddingRight    | int    | Yes      | 15        |
+paddingBottom   | int    | Yes      | 15        |
+paddingLeft     | int    | Yes      | 0         |
 
 #### Props for swipeout
 

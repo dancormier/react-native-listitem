@@ -73,7 +73,8 @@ var listitemExample = React.createClass({
       <View style={styles.container}>
         <ListView
           dataSource={this.state.dataSource}
-          renderRow={this.renderRow} />
+          renderRow={this.renderRow}
+          style={styles.listview} />
       </View>
     );
   }
@@ -82,10 +83,14 @@ var listitemExample = React.createClass({
 var styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#efeff4',
     flex: 1,
     flexDirection: 'row',
   },
+  listview: {
+    // borderBottomColor: '#c8c7cc',
+    // borderBottomWidth: 1,
+  }
 });
 
 AppRegistry.registerComponent('listitemExample', () => listitemExample);

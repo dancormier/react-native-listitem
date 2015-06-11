@@ -10,10 +10,10 @@ var Listitem = React.createClass({
     return {
       backgroundColor: '#ffffff',
       onPress: null,
-      paddingTop: 14,
-      paddingRight: 16,
-      paddingBottom: 16,
-      paddingLeft: 16,
+      paddingTop: 15,
+      paddingRight: 15,
+      paddingBottom: 15,
+      paddingLeft: 0,
       text: null,
       underlayColor: "rgba(0,0,0,.015)",
     }
