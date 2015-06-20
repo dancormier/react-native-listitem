@@ -35,17 +35,6 @@ paddingRight    | int    | Yes      | 15        |
 paddingBottom   | int    | Yes      | 15        |
 paddingLeft     | int    | Yes      | 0         |
 
-#### Props for swipeout
-
-Prop                    | Type   | Optional | Default   | Description
------------------------ | ------ | -------- | --------- | -----------
-swipeoutLeft            | array  | Yes      | []        | swipeout buttons on left
-swipeoutRight           | array  | Yes      | []        | swipeout buttons on right
-swipeoutAutoClose       | bool   | Yes      | false     | auto close on button press
-swipeoutBackgroundColor | string | Yes      | '#b6bec0' | background color
-
-For swipeout button props, see [react-native-swipeout readme](https://github.com/dancormier/react-native-swipeout/blob/master/README.md)
-
 ## To Do
 
 [https://github.com/dancormier/react-native-listitem/issues](https://github.com/dancormier/react-native-listitem/issues)
