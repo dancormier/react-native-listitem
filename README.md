@@ -1,7 +1,7 @@
 # react-native-listitem
 iOS-style listitem component for React Native
 
-![listitem preview](http://i.imgur.com/mV1LFqe.gif)
+![listitem preview](http://i.imgur.com/x3Hlfbe.png)
 
 ## Installation
 ```
