@@ -1,8 +1,6 @@
 var React = require('react-native')
 var {Text, TouchableHighlight, View} = React
 
-var Swipeout = require('react-native-swipeout')
-
 var styles = require('./styles.js')
 
 var Listitem = React.createClass({
@@ -43,23 +41,17 @@ var Listitem = React.createClass({
     if (p.children) var listitemChild = <View>{p.children}</View>
 
     return (
-      <Swipeout
-        autoClose={p.swipeoutAutoClose}
-        backgroundColor={p.swipeoutBackgroundColor}
-        left={p.swipeoutLeft}
-        right={p.swipeoutRight}>
-        <View style={styleLiContainer}>
-          {p.onPress ?
-            <TouchableHighlight
-              style={styleLi}
-              underlayColor={p.underlayColor}
-              onPress={self._handlePress}>
-                {listitemChild}
-            </TouchableHighlight>
-          : <View style={styleLi}>{listitemChild}</View>
-          }
-        </View>
-      </Swipeout>
+      <View style={styleLiContainer}>
+        {p.onPress ?
+          <TouchableHighlight
+            style={styleLi}
+            underlayColor={p.underlayColor}
+            onPress={self._handlePress}>
+              {listitemChild}
+          </TouchableHighlight>
+        : <View style={styleLi}>{listitemChild}</View>
+        }
+      </View>
     )
   }
 })

@@ -32,15 +32,6 @@ var listitemExample = React.createClass({
         text: "Listitem with onPress",
         onPress: function() {alert('listitem onPress fired')},
       }, {
-        text: "With swipeout buttons",
-        swipeoutRight: [
-          {
-            text: "Mark as Read",
-            onPress: function() {alert('Swipeout button onPress fired')},
-            type: "primary",
-          }
-        ],
-      }, {
         children: <View>
                     <Text style={[{color: '#999', fontSize: 18, fontWeight: 600, paddingBottom: 4}]}>Custom component</Text>
                     <Text style={[{color: '#666', fontSize: 12, fontWeight: 200}]}>You can pass any component via the 'children' prop.</Text>
@@ -62,11 +53,7 @@ var listitemExample = React.createClass({
               paddingTop={item.paddingTop}
               paddingRight={item.paddingRight}
               paddingBottom={item.paddingBottom}
-              paddingLeft={item.paddingLeft}
-              swipeoutRight={item.swipeoutRight}
-              swipeoutLeft={item.swipeoutLeft}
-              swipeoutAutoClose={item.swipeoutAutoClose}
-              swipeoutBackgroundColor={item.swipeoutBackgroundColor}/>
+              paddingLeft={item.paddingLeft}/>
   }
 , render: function() {
     return (
@@ -87,10 +74,6 @@ var styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
   },
-  listview: {
-    // borderBottomColor: '#c8c7cc',
-    // borderBottomWidth: 1,
-  }
 });
 
 AppRegistry.registerComponent('listitemExample', () => listitemExample);
