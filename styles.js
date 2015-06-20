@@ -5,10 +5,17 @@ var styles = StyleSheet.create({
   li: {
     borderBottomColor: '#c8c7cc',
     borderBottomWidth: 0.5,
+    paddingTop: 15,
+    paddingRight: 15,
+    paddingBottom: 15,
   },
   liContainer: {
+    backgroundColor: '#fff',
     flex: 1,
     paddingLeft: 15,
+  },
+  liIndent: {
+    flex: 1,
   },
   liText: {
     color: '#333',
