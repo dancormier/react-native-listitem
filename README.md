@@ -29,11 +29,10 @@ Prop            | Type   | Optional | Default   | Description
 text            | string | Yes      | null      | text displayed in listitem
 children        | string | Yes      | null      | pass custom component as child
 backgroundColor | string | Yes      | '#ffffff' | 
+indent          | int    | Yes      | 15        | paddingLeft for listitem contents
 onPress         | func   | Yes      | null      | function executed onPress
-paddingTop      | int    | Yes      | 15        |
-paddingRight    | int    | Yes      | 15        |
-paddingBottom   | int    | Yes      | 15        |
-paddingLeft     | int    | Yes      | 0         |
+style           | string | Yes      |           | custom style for listitem
+styleText       | string | Yes      |           | custom style for listitem text
 
 ## To Do
 

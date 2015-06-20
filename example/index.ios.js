@@ -7,6 +7,7 @@
 var React = require('react-native');
 var {
   AppRegistry,
+  Image,
   ListView,
   StyleSheet,
   Text,
@@ -27,14 +28,20 @@ var listitemExample = React.createClass({
     this.updateDataSource([
       {
         text: "Simple listitem",
-        onPress: function() {console.log('pressed')},
       }, {
-        text: "Listitem with onPress",
+        text: "With onPress",
         onPress: function() {alert('listitem onPress fired')},
       }, {
+        text: "With props style, styleText, indent, backgroundColor",
+        backgroundColor: '#0777fe',
+        indent: 0,
+        style: [styles.customLi],
+        styleText: [styles.customLiText]
+      }, {
         children: <View>
-                    <Text style={[{color: '#999', fontSize: 18, fontWeight: 600, paddingBottom: 4}]}>Custom component</Text>
-                    <Text style={[{color: '#666', fontSize: 12, fontWeight: 200}]}>You can pass any component via the 'children' prop.</Text>
+                    <Image style={{height: 20, width: 20}} source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}} />
+                    <Text style={[{color: '#999', fontSize: 18, fontWeight: '600', paddingBottom: 4}]}>Custom component</Text>
+                    <Text style={[{color: '#666', fontSize: 12, fontWeight: '200'}]}>You can pass any component via the 'children' prop.</Text>
                   </View>,
         paddingTop: 10,
       }
@@ -50,10 +57,10 @@ var listitemExample = React.createClass({
               text={item.text}
               children={item.children}
               onPress={item.onPress}
-              paddingTop={item.paddingTop}
-              paddingRight={item.paddingRight}
-              paddingBottom={item.paddingBottom}
-              paddingLeft={item.paddingLeft}/>
+              backgroundColor={item.backgroundColor}
+              indent={item.indent}
+              style={item.style}
+              styleText={item.styleText}/>
   }
 , render: function() {
     return (
@@ -73,6 +80,18 @@ var styles = StyleSheet.create({
     backgroundColor: '#efeff4',
     flex: 1,
     flexDirection: 'row',
+  },
+  customLi: {
+    borderBottomColor: '#0044aa',
+    borderBottomWidth: 4,
+    paddingTop: 10,
+    paddingBottom: 12,
+  },
+  customLiText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '600',
+    paddingLeft: 15,
   },
 });
 
