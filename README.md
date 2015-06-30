@@ -1,5 +1,5 @@
 # react-native-listitem
-iOS-style listitem component for React Native
+react-native-listitem acts as a quick default for iOS-native styling of a listitem
 
 ![listitem preview](http://i.imgur.com/x3Hlfbe.png)
 
