@@ -7,7 +7,7 @@
     "latest": "npm install react-native-listitem@* --save"
   },
   "dependencies": {
-    "react-native": "^0.5.0",
+    "react-native": "^0.6.0",
     "react-native-listitem": "^1.0.1"
   }
 }
