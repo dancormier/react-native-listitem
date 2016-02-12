@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/dancormier/react-native-listitem/issues"
   },
-  "homepage": "https://github.com/dancormier/react-native-listitem",
-  "dependencies": {
-    "react-native": "^0.7.1"
-  }
+  "homepage": "https://github.com/dancormier/react-native-listitem"
 }
