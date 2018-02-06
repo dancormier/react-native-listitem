@@ -1,3 +1,6 @@
+# This is crusty as hell
+don't use it.
+
 # react-native-listitem
 react-native-listitem acts as a quick default for iOS-native styling of a listitem
 
